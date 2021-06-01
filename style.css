@@ -86,9 +86,12 @@ input[type='text'] {
     display: flex;
     flex-direction: row;
 }
+.single-meal h1{
+    margin-left: 25px;
+}
 .single-meal img {
     width: 350px;
-    margin: 15px;
+    margin: 25px;
     border: 4px #fff solid;
     border-radius: 2px;
 }
@@ -102,6 +105,9 @@ input[type='text'] {
     margin: 0;
     letter-spacing: 0.5px;
     line-height: 1.5s;
+}
+.single-meal-info p{
+    margin-left: 110px;
 }
 .single-meal ul{
     padding-left: 0;
@@ -124,5 +130,14 @@ input[type='text'] {
 @media (max-width: 800px) {
     .single-meal{
         flex-direction: column;
+        align-items: center;
+    }
+    .single-food{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .single-food p{
+        margin-left: 20px;
     }
 }
