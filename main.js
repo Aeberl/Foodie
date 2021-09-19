@@ -73,10 +73,10 @@ function searchMeal(e) {
             }else {
                 mealsEl.innerHTML = data.meals.map(meal => 
                     `
-                    <div class="meal">
+                    <div class="meal" >
                         <img src="${meal.strMealThumb}" alt="${meal.strMeal}"/>
                         <div class="meal-info" data-mealID="${meal.idMeal}">
-                            <h3>${meal.strMeal}</h3>
+                            <!-- <h3>${meal.strMeal}</h3> -->
                         </div>
                     </div>
                     `).join('');
@@ -121,8 +121,8 @@ function addMealToDOM(meal) {
     //on click in search results
     
     single_mealEl.innerHTML = `
-        <div class="single-meal" >
-            <div class='single-food'>
+        <div class="single-meal">
+            <div class='single-food' >
                 <h1>${meal.strMeal}</h1>
                 <img src="${meal.strMealThumb}" alt=${meal.strMeal}/>
                 <div class="single-meal-info">
